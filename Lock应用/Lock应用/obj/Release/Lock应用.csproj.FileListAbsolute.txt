@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\bin\Release\Lock应用.exe.config
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\bin\Release\Lock应用.exe
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\bin\Release\Lock应用.pdb
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\obj\Release\Lock应用.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\obj\Release\Lock应用.Form1.resources
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\obj\Release\Lock应用.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\obj\Release\Lock应用.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\obj\Release\Lock应用.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\obj\Release\Lock应用.exe
+C:\Users\Administrator\Desktop\Lock应用\Lock应用\obj\Release\Lock应用.pdb
