@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.2" halcon_version="23.05.0.0">
+<procedure name="main">
+<interface/>
+<body>
+<c></c>
+<c>* 统计图中实心圆点数量，并逐个标注</c>
+<l>dev_update_off ()</l>
+<l>dev_close_window ()</l>
+<l>read_image (Image, 'D:/Halcon作业/1.halcon基础，roi,特征直方图/作业/标记出该图中圆点(实心)的数量.png')</l>
+<l>get_image_size (Image, Width, Height)</l>
+<c></c>
+<c>*打开窗体</c>
+<l>dev_open_window (0, 0, Width, Height, 'black', WindowHandle)</l>
+<l>dev_display (Image)</l>
+<l>threshold (Image, Dark, 0, 90)</l>
+<c>*开运算</c>
+<l>opening_circle (Dark, RegionOpening, 10.0)</l>
+<l>connection (RegionOpening, ConnectedRegions)</l>
+<l>select_shape (ConnectedRegions, SelectedRegions, 'circularity', 'and', 0.71302, 1)</l>
+<l>select_shape (SelectedRegions, SelectedRegions1, 'area', 'and', 754.44, 2807.69)</l>
+<l>count_obj (SelectedRegions1, Number)</l>
+<c>*排序</c>
+<l>sort_region (SelectedRegions1, SortedRegions, 'first_point', 'true', 'row')</l>
+<l>dev_display (Image)</l>
+<l>dev_set_draw ('margin')</l>
+<l>dev_set_line_width (2)</l>
+<l>dev_set_color ('red')</l>
+<l>dev_display (SortedRegions)</l>
+<l>set_display_font (WindowHandle, 32, 'mono', 'true', 'false')</l>
+<l>disp_message (WindowHandle, '数量：'+Number, 'window', 12, 12, 'green', 'true')</l>
+<c></c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+</hdevelop>
